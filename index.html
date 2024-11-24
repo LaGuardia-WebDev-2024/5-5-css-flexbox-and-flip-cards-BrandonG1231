@@ -10,12 +10,165 @@ Comment Out Code Command + /
     <meta charset="utf-8" />
     <title>Unit 4 - Flexbox</title>
     <style>
- 
+      body 
+      
+      .container {display: flex;
+                  flex-direction: row;
+                  justify-content: space-evenly;}
+      
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;}
+
+.flip-card-front {background-color: #bbb;
+                  color: black;}
+
+.flip-card-back {background-color: #2980b9;
+                 color: white;
+                 transform: rotateY(180deg);}
+        
+        
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;}
+
+.flip-card-front {background-color: #bbb;
+                  color: black;}
+
+.flip-card-back {background-color: #2980b9;
+                 color: white;
+                 transform: rotateY(180deg);}
+        
+        
+        .flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;}
+
+.flip-card-front {background-color: #bbb;
+                  color: black;}
+
+.flip-card-back {background-color: #2980b9;
+                 color: white;
+                 transform: rotateY(180deg);}
+        
+        
     </style>
   </head>
   <body>
     <h1>Jungle Animals</h1>
-
+    
+    <div class="container">
+      
+   <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://site-547756.mozfiles.com/files/547756/medium/Jaguar.jpg" alt="Avatar" style="width:300px;height:300px;object-fit:cover;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Jaguar</h1> 
+      <p>a large cat species and the only living member of the genus Panthera that is native to the Americas. With a body length of up to 1.85 m (6 ft 1 in) and a weight of up to 158 kg (348 lb), it is the biggest cat species in the Americas and the third largest in the world.</p> 
+    </div>
+  </div>
+</div>
+    
+    
+   <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://th.bing.com/th/id/R.5b4c25a89e63bf8fb2233bb4f67caced?rik=9Qn7mNa7fuqavA&riu=http%3a%2f%2f2.bp.blogspot.com%2f-hXvb23R9oY0%2fUN6wIiEUtVI%2fAAAAAAAAAUY%2fJu5qdZTclZg%2fs1600%2fgorilla.jpg&ehk=riIfK%2bf2Wj44UZKaVGw5JIre2iU3wyvBx9Q3%2bS9duVk%3d&risl=&pid=ImgRaw&r=0" width="300px" height="300px">
+    </div>
+    <div class="flip-card-back">
+      <h1>Gorilla</h1> 
+      <p>They tend to live in troops, with the leader being called a silverback. The eastern gorilla is distinguished from the western by darker fur colour and some other minor morphological differences. Gorillas tend to live 35–40 years in the wild.</p> 
+    </div>
+  </div>
+</div> 
    
+    <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Keel-billed_Toucan_(16201157519).jpg" width="300px" height="300px">
+    </div>
+    <div class="flip-card-back">
+      <h1>Toucan</h1> 
+      <p>Toucans are native to the Neotropics, from Southern Mexico, through Central America, into South America south to northern Argentina. They mostly live in the lowland tropics, but the mountain species from the genus Andigena reach temperate climates at high altitudes in the Andes and can be found up to the tree line.</p> 
+    </div>
+  </div>
+</div>
+      
+    </div>
+    
   </body>
 </html>
